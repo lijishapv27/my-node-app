@@ -5,10 +5,8 @@ pipeline {
            steps {
               
                 sh 'docker build -t my-node-img:latest .' 
-                sh 'docker tag my-node-img 
-lijisha27/java-maven-jenkins:latest'
-                sh 'docker tag my-node-img 
-lijisha27/java-maven-jenkins:$BUILD_NUMBER'
+                sh 'docker tag my-node-img ijisha27/java-maven-jenkins:latest'
+                sh 'docker tag my-node-img lijisha27/java-maven-jenkins:$BUILD_NUMBER'
                
           }
         }
